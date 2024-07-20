@@ -188,7 +188,7 @@ A useful file format can be read into memory by some software. Think of the form
 - A clear and open specification for the format that is ideally not tied to a specific software product.
 - Open software libraries and APIs that can parse the format.
 
-The formats that are considered the most interoperable against the criteria above include Comma Separated Values (CSV), Extensible Markup Language (XML), and JavaScript Object Notation (JSON). Other common formats for researchers include binary array-based formats like Network Common Data Form (NetCDF), Hierarchical Data Format (HDF), Geotiff, Flexible Image Transport System (FITS), and other formats designed for cloud storage and access like [Zarr](https://zarr.dev/), [Cloud Optimized GeoTIFF](https://www.cogeo.org/), and [Parquet](https://parquet.apache.org/). Many of these formats have tools that check datasets for compliance and readability.
+The formats that are considered the most interoperable against the criteria above include Comma Separated Values (CSV), Extensible Markup Language (XML), and JavaScript Object Notation (JSON). Other common formats for researchers include binary array-based formats like Network Common Data Form (NetCDF), Hierarchical Data Format (HDF), Geotiff, Flexible Image Transport System (FITS), Advanced Scientific Data Format [ASDF](https://www.asdf-format.org/) and other formats designed for cloud storage and access like [Zarr](https://zarr.dev/), [Cloud Optimized GeoTIFF](https://www.cogeo.org/), and [Parquet](https://parquet.apache.org/). Many of these formats have tools that check datasets for compliance and readability.
 
 ### Inspecting Data
 
@@ -200,10 +200,11 @@ These files can all be opened with most common text editors. There are some tool
 - xml: Most internet browsers and with any text editor like Notepad or Microsoft Word or Google Docs
 - json: [http://json.parser.online.fr/](http://json.parser.online.fr/) and [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print)
 
-**NetCDF, HDF, FITS** -
+**NetCDF, HDF, FITS, ASDF** -
 These files require special software tools to view their contents. Many of these tools will also visualize the data as well.
 - NetCDF and HDF: Most files are easily viewed using the [Xarray](https://docs.xarray.dev/en/stable/) open-source software library in Python or the [ncdf4](https://cran.r-project.org/web/packages/ncdf4/index.html) library in R.
 - FITS: There are many options, a list is provided at [https://fits.gsfc.nasa.gov/fits_viewer.html](https://fits.gsfc.nasa.gov/fits_viewer.html)
+- ASDF: Files are viewed with the [asdf](https://asdf.readthedocs.io/) open-source Python library, IDL or with other libraries listed at [https://asdf-standard.readthedocs.io/en/latest/intro.html#implementations](https://asdf-standard.readthedocs.io/en/latest/intro.html#implementations)
 
 **ZARR, COG, PARQUET** -
 These files require special software tools to view their contents. Many of these tools will also visualize the data as well.
